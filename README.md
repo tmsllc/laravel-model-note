@@ -1,7 +1,5 @@
 # Add notes to Eloquent models
 
-This package was originally written by: [DigitalCloud](https://github.com/DigitalCloud/laravel-model-notes).
-
 This package provides a `HasNotes` trait that, once installed on a model, allows you to do things like this:
 
 ```php
@@ -215,6 +213,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 You are welcome to contribute
 
 ## Credits
+This package was originally written by: [DigitalCloud](https://github.com/DigitalCloud/laravel-model-notes).
 
 - [Transport Systems](https://github.com/tmsllc)
 - [All Contributors](../../contributors)
