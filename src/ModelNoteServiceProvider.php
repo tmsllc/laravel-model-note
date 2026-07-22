@@ -10,7 +10,7 @@ class ModelNoteServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
-            $this->loadMigrationsFrom(__DIR__.'/../database/migrations/');
+            $this->loadMigrationsFrom(__DIR__ . '/../database/migrations/');
         }
 
         if (! class_exists('CreateNotesTable')) {
@@ -22,7 +22,7 @@ class ModelNoteServiceProvider extends ServiceProvider
         }
 
         $this->publishes([
-            __DIR__.'/../config/model-note.php' => config_path('model-note.php'),
+            __DIR__ . '/../config/model-note.php' => config_path('model-note.php'),
         ], 'config');
 
         $this->guardAgainstInvalidNoteModel();
@@ -30,7 +30,7 @@ class ModelNoteServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/model-note.php', 'model-note');
+        $this->mergeConfigFrom(__DIR__ . '/../config/model-note.php', 'model-note');
     }
 
     public function guardAgainstInvalidNoteModel()
